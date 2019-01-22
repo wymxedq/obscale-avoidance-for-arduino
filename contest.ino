@@ -123,21 +123,21 @@ void run_no() {
 	}//V字弯右拐
 }//无障碍物时
 void lotor(int speed, boolean direction) {
-	if (direction == true) {
+	if (direction) {
 		analogWrite(lotor2, speed);
 		digitalWrite(lotor1, LOW);
 	}//正转
-	if (direction == false) {
+	if (direction) {
 		analogWrite(lotor1, speed);
 		digitalWrite(lotor2, LOW);
 	}//倒转
 }//左轮控制函数
 void rotor(int speed, boolean direction) {
-	if (direction == true) {
+	if (direction) {
 		analogWrite(rotor2, speed);
 		digitalWrite(rotor1, LOW);
 	}//正转
-	if (direction == false) {
+	if (direction) {
 		analogWrite(rotor1, speed);
 		digitalWrite(rotor2, LOW);
 	}//倒转
