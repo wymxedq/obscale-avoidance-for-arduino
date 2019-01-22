@@ -127,7 +127,7 @@ void lotor(int speed, boolean direction) {
 		analogWrite(lotor2, speed);
 		digitalWrite(lotor1, LOW);
 	}//正转
-	if (direction) {
+	if (~direction) {
 		analogWrite(lotor1, speed);
 		digitalWrite(lotor2, LOW);
 	}//倒转
@@ -137,7 +137,7 @@ void rotor(int speed, boolean direction) {
 		analogWrite(rotor2, speed);
 		digitalWrite(rotor1, LOW);
 	}//正转
-	if (direction) {
+	if (~direction) {
 		analogWrite(rotor1, speed);
 		digitalWrite(rotor2, LOW);
 	}//倒转
